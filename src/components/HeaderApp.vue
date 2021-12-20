@@ -16,7 +16,7 @@
                 </a>
                 <v-spacer/>
             </span>
-            <h3 class="ml-2 ml-4 py-4 pl-4" style="font-size: 18px;border-left: 1px solid gainsboro;">{{$t('agriculture_cooperative_s_financial_management_software')}}</h3> 
+            <h3 class="ml-2 ml-4 py-4 pl-4" style="font-size: 18px;border-left: 1px solid gainsboro;">{{$t('billing_management_system_for_power_supplier')}}</h3> 
             <h1 v-if="this.$route.meta.logo" class="ml-2 hidden-sm-and-down">
                 <img style="height: 50px;" :src="'/images/' + this.$route.meta.logo"/>
             </h1>

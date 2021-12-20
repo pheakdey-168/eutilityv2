@@ -3621,7 +3621,12 @@
     "earn_account": "Earning allocation account",
     "share_balance": "Share balance",
     "average_no_share": "AVG number of share",
-    "reschedule_loan": "Reschedule loan"
+    "reschedule_loan": "Reschedule loan",
+    "billing_management_system_for_power_supplier": "Billing Management System for Power Supplier",
+    "electricity_description": "Billing Management System for Power Supplier",
+    "meter_to_be_connected": "Meter to be connected",
+    "meter_to_be_disconnected": "Meter to be disconnected",
+    "void": "Void"
 
 
 }

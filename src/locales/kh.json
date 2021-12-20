@@ -487,7 +487,7 @@
     "to_pay_the_week": "To pay these week",
     "recurring_purchases": "Recurring Purchases",
     "purchase_and_expenses": "ការទិញ & ចំណាយ",
-    "invoices": "Invoices",
+    "invoices": "វិក្តយបត្រ",
     "credit_purchase": "Credit Purchase",
     "cash_credit_purchase": "Cash Credit Purchase",
     "expenses": "ចំណាយ",
@@ -990,7 +990,7 @@
     "manufacturing_functions": "Manufacturing Functions",
     "warehouses": "Warehouses",
     "warehouse": "Warehouse",
-    "operations": "Operations",
+    "operations": "ប្រតិបត្តការណ៍",
     "packing_lists": "Packing Lists",
     "transfer_orders": "Transfer Orders",
     "shelving_orders": "Shelving Orders",
@@ -1764,7 +1764,7 @@
     "%_of_the_total_sale": "% of the Total Sale",
     "average_amount_per_invoice": "Average Amount per Invoice",
     "average_sale_per_month": "Average Sale per Month",
-    "total_sale": "Total Sale",
+    "total_sale": "សរុបការលក់",
     "sale_summary_by_products_services": "Sale Summary by Products / Services",
     "sale_summary_by_products_services_desc": "This is a sale summary grouped by product and services.",
     "margin_%": "Margin %",
@@ -3018,7 +3018,7 @@
     "balance_per_vendor": "Balance per Vendor",
     "vendors_analysis": "Vendors Analysis",
     "total_vendors": "Total Vendors",
-    "overdue": "Overdue",
+    "overdue": "ហួសកាលកំណត់",
     "active": "សកម្ម",
     "inactive": "អសកម្ម",
     "%_of_revenue": "% of Revenue",
@@ -3622,7 +3622,14 @@
     "earn_account": "គណនីបែងចែកចំណូល",
     "share_balance": "សមតុល្យហ៊ុន",
     "average_no_share": "ចំនួនភាគហ៊ុនជាមធ្យម",
-    "reschedule_loan": "កំណត់​​ឥណទាន​ឡើងវិញ"
+    "reschedule_loan": "កំណត់​​ឥណទាន​ឡើងវិញ",
+    "billing_management_system_for_power_supplier": "ប្រព័ន្ធគ្រប់គ្រងវិក្តយបត្រសម្រាប់ស្ថានីយ៍អគ្គីសនី",
+    "electricity_description": "គ្រប់គ្រងប្រតិបត្តការណ៍​​ វិក្តយបត្រសម្រាប់ស្ថានីយ៍អគ្គីសនី",
+    "meter_to_be_connected": "កុងទ័រត្រូវភ្ជាប់",
+    "meter_to_be_disconnected": "កុងទ័រត្រូវផ្តាច់",
+    "void": "មោឃៈ"
+
+
 
 
 

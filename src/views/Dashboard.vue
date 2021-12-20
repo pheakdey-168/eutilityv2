@@ -58,7 +58,7 @@
                                         />
                                     </v-col>
                                     <v-col sm="8" cols="8" class="pk-1">
-                                            <v-list-item-title class=" mb-1  headline-left">{{$t('share_saving')}}</v-list-item-title>
+                                            <v-list-item-title class=" mb-1  headline-left">{{$t('cash_receipt')}}</v-list-item-title>
                                     </v-col>
                                 </v-row>
                             </v-list-item-content>
@@ -83,7 +83,7 @@
                                         />
                                     </v-col>
                                     <v-col sm="8" cols="8" class="pk-1">
-                                        <v-list-item-title class=" mb-1  headline-left">{{$t('statistics_reports')}}</v-list-item-title>
+                                        <v-list-item-title class=" mb-1  headline-left">{{$t('reports')}}</v-list-item-title>
                                     </v-col>
                                 </v-row>
                             </v-list-item-content>
@@ -164,17 +164,15 @@
                         <v-card
                             class="mx-auto"
                             max-width="465"
+                            min-height= "215"
                             outlined
                             @click="goCredit"
                         >
                             <v-list-item three-line>
                                 <v-list-item-content class="pk-3">
                                     <v-list-item-title class="headline mb-1 primary--text">
-                                        {{$t('saving_credit')}}
+                                        {{$t('operations')}}
                                     </v-list-item-title>
-                                    <div class="overline mb-4 business">
-                                    {{$t('business')}}
-                                    </div>
                                     <v-row>
                                         <v-col sm="5" cols="5" class="">
                                             <img
@@ -184,7 +182,7 @@
                                             />
                                         </v-col>
                                         <v-col sm="7" cols="7" class="pl-0">
-                                            <v-list-item-subtitle>{{$t('saving_credit_description')}}</v-list-item-subtitle>
+                                            <v-list-item-subtitle>{{$t('electricity_description')}}</v-list-item-subtitle>
                                         </v-col>
                                     </v-row>
                                 </v-list-item-content>
@@ -192,100 +190,203 @@
                         </v-card>
                     </v-col> 
                     <v-col sm="6" cols="12" class="">
-                            <v-card
-                                class="mx-auto"
-                                max-width="465"
-                                outlined
-                                @click="goInput" 
-                                
+                        <v-card
+                            class="mx-auto"
+                            max-width="465"
+                            min-height= "215"
+                            outlined
                             >
-                                <v-list-item three-line>
-                                    <v-list-item-content class="pk-3">
-                                        <v-list-item-title class="headline mb-1 primary--text">
-                                        {{$t('input_supply')}}
-                                        </v-list-item-title>
-                                        <div class="overline mb-4 business">
-                                        {{$t('business')}}
-                                        </div>
-                                        <v-row>
-                                            <v-col sm="5" cols="5" class="">
-                                                <img
-                                                    class="img-1"
-                                                    src="../assets/images/coo_market_biz.png"
-                                                    width="80%"
-                                                />
-                                            </v-col>
-                                            <v-col sm="7" cols="7" class="pl-0">
-                                                <v-list-item-subtitle>{{$t('input_supply_description')}}</v-list-item-subtitle>
-                                            </v-col>
-                                        </v-row>
-                                    </v-list-item-content>
-                                </v-list-item>
-                            </v-card>
-                    </v-col> 
-                    <v-col sm="6" cols="12" class="">
-                        <v-card
-                            class="mx-auto"
-                            max-width="465"
-                            outlined
-                            @click="goMarketing" 
-
-                        >
-                            <v-list-item three-line>
-                                <v-list-item-content class="pk-3">
-                                    <v-list-item-title class="headline mb-1 primary--text">
-                                        {{$t('marketing')}}
-                                        </v-list-item-title>
-                                        <div class="overline mb-4 business">
-                                        {{$t('business')}}
-                                        </div>
-                                        <v-row>
-                                            <v-col sm="5" cols="5" class="">
-                                                <img
-                                                    class="img-1"
-                                                    src="@/assets/images/coo_joint_use.png"
-                                                    width="80%"
-                                                />
-                                            </v-col>
-                                            <v-col sm="7" cols="7" class="pl-0">
-                                                <v-list-item-subtitle>{{$t('marketing_description')}}</v-list-item-subtitle>
-                                            </v-col>
-                                        </v-row>
-                                </v-list-item-content>
-                            </v-list-item>
+                            <v-col sm="12" cols="12" class="pr-0 pb-0">
+                                <template>
+                                    <v-simple-table>
+                                        <template>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-left tdbig">
+                                                        <span class="niradei_medium font_14 grey--text">
+                                                            {{ $t("meter_to_be_connected") }}
+                                                        </span>
+                                                    </td>
+                                                    <td class="">:
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <span class="niradei_heavy font_18 dark_grey">
+                                                            10000
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left tdbig">
+                                                        <span class="niradei_medium font_14 grey--text">
+                                                            {{ $t("meter_to_be_disconnected") }}
+                                                        </span>
+                                                    </td>
+                                                    <td class="">:
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <span class="niradei_heavy font_18 dark_grey">
+                                                        500
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left tdbig">
+                                                        <span class="niradei_medium font_14 grey--text">
+                                                        {{ $t("total_sale") }}
+                                                        </span>
+                                                    </td>
+                                                    <td class="">:
+                                                    </td>
+                                                    <td class="text-right tdbig">
+                                                        <span class="niradei_heavy font_18 dark_grey">
+                                                        1000,000,000,000
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                
+                                                
+                                            </tbody>
+                                        </template>
+                                    </v-simple-table>
+                                </template>
+                            </v-col>
+                            <v-col sm="12" cols="12" class="pl-0 text-right pt-4">
+                                <router-link :to="lang+'/credit_biz/list_of_loan'" class="mb-0 niradei_bold font_16 primary--text text-right">{{$t('view_report')}}</router-link>
+                            </v-col>
                         </v-card>
                     </v-col> 
                     <v-col sm="6" cols="12" class="">
                         <v-card
                             class="mx-auto"
                             max-width="465"
+                            min-height= "215"
                             outlined
-                            @click="goJointUser" 
-                        >
-                            <v-list-item three-line>
-                                <v-list-item-content class="pk-3">
-                                        <v-list-item-title class="headline mb-1 primary--text">
-                                        {{$t('service')}}
-                                        </v-list-item-title>
-                                        <div class="overline mb-4 business">
-                                        {{$t('business')}}
-                                        </div>
-                                        <v-row>
-                                            <v-col sm="5" cols="5" class="">
-                                                <img
-                                                    class="img-1"
-                                                    src="../assets/images/coo_supply.png"
-                                                    width="80%"
-                                                />
-                                            </v-col>
-                                            <v-col sm="7" cols="7" class="pl-0">
-                                                <v-list-item-subtitle>{{$t('joint_use_description')}}</v-list-item-subtitle>
-                                            </v-col>
-                                        </v-row>
-                                </v-list-item-content>
-                            </v-list-item>
+                            >
+                            <v-col sm="12" cols="12" class="pr-0 pb-0">
+                                <template>
+                                    <v-simple-table>
+                                        <template>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-left tdbig">
+                                                        <span class="niradei_medium font_14 grey--text">
+                                                            {{ $t("invoices") }}
+                                                        </span>
+                                                    </td>
+                                                    <td class="">:
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <span class="niradei_heavy font_18 dark_grey">
+                                                            10000
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left tdbig">
+                                                        <span class="niradei_medium font_14 grey--text">
+                                                            {{ $t("customers") }}
+                                                        </span>
+                                                    </td>
+                                                    <td class="">:
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <span class="niradei_heavy font_18 dark_grey">
+                                                        500
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left tdbig">
+                                                        <span class="niradei_medium font_14 grey--text">
+                                                        {{ $t("overdue") }}
+                                                        </span>
+                                                    </td>
+                                                    <td class="">:
+                                                    </td>
+                                                    <td class="text-right tdbig">
+                                                        <span class="niradei_heavy font_18 dark_grey">
+                                                        500
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                
+                                                
+                                            </tbody>
+                                        </template>
+                                    </v-simple-table>
+                                </template>
+                            </v-col>
+                            <v-col sm="12" cols="12" class="pl-0 text-right pt-4">
+                                <router-link :to="lang+'/credit_biz/list_of_loan'" class="mb-0 niradei_bold font_16 primary--text text-right">{{$t('view_report')}}</router-link>
+                            </v-col>
                         </v-card>
-                    </v-col>
+                    </v-col> 
+                    <v-col sm="6" cols="12" class="">
+                        <v-card
+                            class="mx-auto"
+                            max-width="465"
+                            min-height= "215"
+                            outlined
+                            >
+                            <v-col sm="12" cols="12" class="pr-0 pb-0">
+                                <template>
+                                    <v-simple-table>
+                                        <template>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-left tdbig">
+                                                        <span class="niradei_medium font_14 grey--text">
+                                                            {{ $t("active") }}
+                                                        </span>
+                                                    </td>
+                                                    <td class="">:
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <span class="niradei_heavy font_18 dark_grey">
+                                                            10000
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left tdbig">
+                                                        <span class="niradei_medium font_14 grey--text">
+                                                            {{ $t("inactive") }}
+                                                        </span>
+                                                    </td>
+                                                    <td class="">:
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <span class="niradei_heavy font_18 dark_grey">
+                                                        500
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left tdbig">
+                                                        <span class="niradei_medium font_14 grey--text">
+                                                        {{ $t("void") }}
+                                                        </span>
+                                                    </td>
+                                                    <td class="">:
+                                                    </td>
+                                                    <td class="text-right tdbig">
+                                                        <span class="niradei_heavy font_18 dark_grey">
+                                                        500
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                
+                                                
+                                            </tbody>
+                                        </template>
+                                    </v-simple-table>
+                                </template>
+                            </v-col>
+                            <v-col sm="12" cols="12" class="pl-0 text-right pt-4">
+                                <router-link :to="lang+'/credit_biz/list_of_loan'" class="mb-0 niradei_bold font_16 primary--text text-right">{{$t('view_report')}}</router-link>
+                            </v-col>
+                        </v-card>
+                    </v-col> 
                 </v-row>
             </v-col>
         </v-row>                               
@@ -502,6 +603,9 @@
     }
 </script>
 <style scoped>
+.v-data-table > .v-data-table__wrapper > table > tbody > tr > td {
+    border-bottom: thin solid rgba(0, 0, 0, 0.12) !important;
+}
 body {
     font-family: "Niradei-Regular";
 }
